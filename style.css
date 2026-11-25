@@ -1,0 +1,41 @@
+:root {
+  --paper: #f1e6d6;
+  --line: #4a3b2e;
+  --accent: #b5532a;
+  --shade: #e3d2ba;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #241d17;
+    --line: #eadccb;
+    --accent: #e08a5f;
+    --shade: #3a2f26;
+  }
+}
+* { box-sizing: border-box; }
+html { background: var(--paper); color: var(--line); }
+body {
+  margin: 0 auto;
+  max-width: 44rem;
+  padding: 2.5rem 1rem 4rem;
+  font: 1.0625rem/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+h1, h2, h3 { line-height: 1.2; }
+h1 { font-size: 2.25rem; margin: 0 0 0.25rem; }
+a { color: var(--accent); }
+header { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+header img { width: 72px; height: 72px; border-radius: 16px; }
+header p { margin: 0; }
+.game {
+  display: flex; gap: 1rem; align-items: center;
+  border: 2px solid var(--line); border-radius: 16px; padding: 1rem;
+  background: var(--shade);
+}
+.game img { width: 96px; height: 96px; border-radius: 20px; flex: none; }
+.game h2 { margin: 0 0 0.25rem; }
+.game p { margin: 0.25rem 0; }
+.lang { border-top: 2px solid var(--shade); margin-top: 2rem; padding-top: 1rem; }
+footer { margin-top: 3rem; font-size: 0.9rem; opacity: 0.8; }
+@media (max-width: 30rem) {
+  .game { flex-direction: column; align-items: flex-start; }
+}
