@@ -35,6 +35,14 @@ header p { margin: 0; }
 .game h2 { margin: 0 0 0.25rem; }
 .game p { margin: 0.25rem 0; }
 .lang { border-top: 2px solid var(--shade); margin-top: 2rem; padding-top: 1rem; }
+.support { margin-top: 2.5rem; }
+.support h2 { margin: 0 0 0.25rem; }
+.button {
+  display: inline-block; padding: 0.7rem 1.1rem; border-radius: 12px;
+  background: var(--accent); color: var(--paper); font-weight: 600; text-decoration: none;
+}
+.button:hover, .button:focus-visible { filter: brightness(1.1); }
+.button small { font-weight: 400; opacity: 0.85; }
 footer { margin-top: 3rem; font-size: 0.9rem; opacity: 0.8; }
 @media (max-width: 30rem) {
   .game { flex-direction: column; align-items: flex-start; }
